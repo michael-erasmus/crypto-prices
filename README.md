@@ -18,3 +18,5 @@ It will be saved to these files
 ./data/prices-btc.csv
 ./data/prices-eth.csv
 ```
+
+We'll also do some slight transformation on the raw data (removing the attribution footer)
