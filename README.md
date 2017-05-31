@@ -20,3 +20,19 @@ It will be saved to these files
 ```
 
 We'll also do some slight transformation on the raw data (removing the attribution footer)
+
+## Transformation
+
+To transform the data to a format suitable for analysis, run:
+
+```bash
+make transform
+```
+
+If needed, this will build the docker image needed to run analysis. This will output to a file:
+
+```
+./data/prices-all.csv
+```
+
+This file will contain a row for each daily price for each currency, denoted by the `symbol` column.
