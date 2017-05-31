@@ -8,5 +8,8 @@ data:
 build:
 	docker build -t $(NAME) .
 
-transform: build
+transform: build data
 	docker run -v $(PWD):/work -it --rm $(NAME) ./transform.py
+
+notebook: transform
+	docker run -p 8888:8888 -v $(PWD):/work -it --rm $(NAME)

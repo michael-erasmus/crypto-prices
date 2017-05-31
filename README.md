@@ -2,6 +2,16 @@
 
 A super simple analysis of how Bitcoin and Ethereum prices have changed over time, using daily prices from Coindesk.
 
+## Get started
+To run a Jupyter Notebook to explore the data, and run the main analysis, run:
+
+```
+make notebook
+```
+
+This will run all the needed steps to run the main analysis (getting the raw data and transforming it).
+
+The main analysis notebook is at http://0.0.0.0:8888/notebooks/notebooks/Data%20Analysis.ipynb
 
 ## Getting the raw data
 
