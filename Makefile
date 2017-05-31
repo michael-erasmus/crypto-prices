@@ -9,4 +9,4 @@ build:
 	docker build -t $(NAME) .
 
 transform: build
-	docker run -v $(PWD):/usr/src/app -it --rm $(NAME) ./transform.py
+	docker run -v $(PWD):/work -it --rm $(NAME) ./transform.py
